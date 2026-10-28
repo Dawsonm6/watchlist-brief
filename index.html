@@ -180,94 +180,119 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
-  priceType: "close",
+  mode: "live",
+  asOf: "2026-10-28",
+  retrievedAt: "2026-10-28T11:40:00-04:00",
+  priceType: "intraday",
   companies: {
-    NVDA: {
+    CEG: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 270.74 },
+        { date: "2026-10-22", close: 255.21 },
+        { date: "2026-10-23", close: 253.45 },
+        { date: "2026-10-26", close: 252.48 },
+        { date: "2026-10-27", close: 258.98 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:39 AM", price: 257.66 },
+      priceSource: "https://stockanalysis.com/stocks/ceg/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "AI Power Stocks Fell 7% to 13% in a Week While Exxon and Chevron Just Hit Record Highs. Here's Which Side I'd Rather Own.", source: "The Motley Fool", url: "https://fool.com/investing/2026/10/27/ai-power-stocks-fell-7-to-13-in-a-week-while-exxon/", why: "The article says Constellation slipped from its five-day high along with other AI power names, though its long-term contracts make it the steadiest of the group." }
       ],
       upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-28", event: "FOMC rate decision, Oct 27 to 28 meeting (market-wide)", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+        { date: "2026-11-09", event: "Q3 2026 earnings, before the open (expected; Earnings Whispers lists Nov 9, AJ Bell lists Nov 6; not confirmed on company IR)", source: "Earnings Whispers", url: "https://www.earningswhispers.com/stocks/ceg" }
       ]
     },
-    JPM: {
+    CCJ: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 82.02 },
+        { date: "2026-10-22", close: 78.93 },
+        { date: "2026-10-23", close: 78.60 },
+        { date: "2026-10-26", close: 79.07 },
+        { date: "2026-10-27", close: 82.41 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:39 AM", price: 82.83 },
+      priceSource: "https://stockanalysis.com/stocks/ccj/history/",
       news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-22", headline: "Cameco (TSX:CCO) After Westinghouse Fuel Plant Start Has Its Valuation Case Changed", source: "Simply Wall St", url: "https://simplywall.st/stocks/ca/energy/tsx-cco/cameco-shares/news/cameco-tsxcco-after-westinghouse-fuel-plant-start-has-its-va", why: "Westinghouse, 49% owned by Cameco, has started building a roughly US$1 billion LEU+ fuel plant in South Carolina, adding exposure to next-generation fuel demand." }
       ],
-      upcoming: []
-    },
-    ACN: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [],
       upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-30", event: "Q3 2026 results before the open; conference call 8:00 a.m. Eastern", source: "Cameco", url: "https://www.cameco.com/media/news/cameco-provides-date-for-2026-q3-results-conference-call-and-webcast" }
       ]
     },
-    DE: {
+    BWXT: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
+        { date: "2026-10-21", close: 135.11 },
+        { date: "2026-10-22", close: 127.30 },
+        { date: "2026-10-23", close: 127.19 },
+        { date: "2026-10-26", close: 131.20 },
+        { date: "2026-10-27", close: 134.07 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:36 AM", price: 133.57 },
+      priceSource: "https://stockanalysis.com/stocks/bwxt/history/",
       news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
-      ],
-      upcoming: []
-    },
-    LLY: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "BWXT Announces Contract with Antares for TRISO Nuclear Fuel Production", source: "Business Wire via Stock Titan", url: "https://stocktitan.net/news/BWXT/bwxt-announces-contract-with-antares-for-triso-nuclear-fuel-2pv6kngoypof.html", why: "A multi-year deal to make TRISO fuel in Lynchburg, starting at 1 MTU, adds commercial advanced-fuel work beside the naval business; no dollar value was disclosed." }
       ],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-11-02", event: "Q3 2026 results after the close; conference call 5:00 p.m. ET", source: "BWXT release via Finviz", url: "https://finviz.com/news/398036/bwx-technologies-to-announce-third-quarter-2026-results-on-monday-november-2" }
+      ]
+    },
+    OKLO: {
+      closes: [
+        { date: "2026-10-21", close: 27.73 },
+        { date: "2026-10-22", close: 27.01 },
+        { date: "2026-10-23", close: 26.35 },
+        { date: "2026-10-26", close: 25.94 },
+        { date: "2026-10-27", close: 27.33 }
+      ],
+      latest: { date: "2026-10-28", time: "11:39 AM", price: 26.59 },
+      priceSource: "https://stockanalysis.com/stocks/oklo/history/",
+      news: [
+        { date: "2026-10-27", headline: "Energy Fuels Jumps 9% on $126M Australian Financing for Rare Earth Project; NuScale Power Climbs 7%, Oklo Gains 6%", source: "24/7 Wall St.", url: "https://247wallst.com/investing/2026/10/27/energy-fuels-jumps-9-on-126m-australian-financing-for-rare-earth-project-nuscale-power-climbs-7-oklo-gains-6/", why: "Oklo bounced with a sector-wide nuclear rally, not on company news, showing how much it trades with the group." },
+        { date: "2026-10-26", headline: "Oklo Is Now Down 63% This Year: Is OKLO Stock Dead Money or Due for a Bounce?", source: "24/7 Wall St.", url: "https://247wallst.com/investing/2026/10/26/oklo-is-now-down-63-this-year-is-oklo-stock-dead-money-or-due-for-a-bounce", why: "TD Cowen started coverage at Hold with a $26 target, and the piece flags no power sales yet plus cash burn and dilution risk before licensing." },
+        { date: "2026-10-21", headline: "Nuclear Energy Analyst Roundup: Wall Street Weighs In On OKLO, SMR, CEG, VST, LEU Stocks", source: "Stocktwits via Yahoo Finance", url: "https://finance.yahoo.com/energy/articles/nuclear-energy-analyst-roundup-wall-015948632.html", why: "Citi kept a Neutral rating but cut its Oklo target to $33 from $57.50." }
+      ],
+      upcoming: [
+        { date: "2026-11-06", event: "Q3 2026 earnings, before the open (expected; Earnings Whispers says confirmed, but Oklo's own date release was not found)", source: "Earnings Whispers", url: "https://www.earningswhispers.com/stocks/oklo" }
+      ]
+    },
+    SMR: {
+      closes: [
+        { date: "2026-10-21", close: 5.50 },
+        { date: "2026-10-22", close: 5.38 },
+        { date: "2026-10-23", close: 5.38 },
+        { date: "2026-10-26", close: 5.27 },
+        { date: "2026-10-27", close: 5.70 }
+      ],
+      latest: { date: "2026-10-28", time: "11:37 AM", price: 5.60 },
+      priceSource: "https://stockanalysis.com/stocks/smr/history/",
+      news: [
+        { date: "2026-10-27", headline: "Energy Fuels Jumps 9% on $126M Australian Financing for Rare Earth Project; NuScale Power Climbs 7%, Oklo Gains 6%", source: "24/7 Wall St.", url: "https://247wallst.com/investing/2026/10/27/energy-fuels-jumps-9-on-126m-australian-financing-for-rare-earth-project-nuscale-power-climbs-7-oklo-gains-6/", why: "NuScale rose with a broad nuclear rally rather than on company-specific news." },
+        { date: "2026-10-21", headline: "Nuclear Energy Analyst Roundup: Wall Street Weighs In On OKLO, SMR, CEG, VST, LEU Stocks", source: "Stocktwits via Yahoo Finance", url: "https://finance.yahoo.com/energy/articles/nuclear-energy-analyst-roundup-wall-015948632.html", why: "Citi kept a Sell rating and cut its NuScale target to $4 from $6.50, below where the stock trades." }
+      ],
+      upcoming: [
+        { date: "2026-11-05", event: "Q3 2026 earnings conference call, 5:00 p.m. ET", source: "NuScale release via Investing News", url: "https://investingnews.com/nuscale-power-to-hold-third-quarter-2026-earnings-conference-call/" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "Watchlist switched to nuclear: sample entries for NVDA, JPM, ACN, DE, LLY removed; CEG, CCJ, BWXT, OKLO, SMR added with live data.",
+      "CEG 270.74 to 257.66 (-4.8%) on a week-long pullback in AI power stocks",
+      "CCJ 82.02 to 82.83 (+1.0%) on Westinghouse starting its LEU+ fuel plant (Cameco owns 49%)",
+      "BWXT 135.11 to 133.57 (-1.1%) on a new multi-year TRISO fuel contract with Antares",
+      "OKLO 27.73 to 26.59 (-4.1%) on Citi cutting its target to $33 and TD Cowen starting at Hold",
+      "SMR 5.50 to 5.60 (+1.8%) on Citi cutting its target to $4 (Sell), then a sector rally on Oct 27",
+      "Last price for all five is intraday on Oct 28 (about 11:36 to 11:39 AM ET, market open); the five closes run Oct 21 to Oct 27.",
+      "Calendar added: FOMC decision Oct 28 (market-wide), CCJ Q3 Oct 30, BWXT Q3 Nov 2, SMR Q3 call Nov 5, OKLO Q3 Nov 6 (expected), CEG Q3 Nov 9 (expected).",
+      "Missing: no company-specific CEG news found in the window beyond sector coverage; Cameco and BWXT company newsrooms, Benzinga, and Constellation IR blocked the fetch (403), so items from them were not used."
+    ],
+    note: "CEG earnings date conflicts between calendars (Earnings Whispers Nov 9, AJ Bell Nov 6); confirm on Constellation IR. OKLO Nov 6 date comes from Earnings Whispers only, not an Oklo release. CCJ news is from Simply Wall St, an analysis site; the Westinghouse plant facts are worth confirming against a Cameco or Westinghouse release. Changelog percentages run from the Oct 21 close to the Oct 28 intraday price. retrievedAt uses the price-page timestamp (11:40 AM ET)."
+  },
   {
     date: "2026-10-16",
     summary: [
